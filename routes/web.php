@@ -30,6 +30,12 @@ Route::post('/login', [LoginController::class, 'authenticate']);
 // buat dulu migration nya, controller, model, view 
 Route::get('/input-aspirasi/create', [InputAspirasiController::class, 'create']);
 
+// untuk menyimpan aspirasi 
+    Route::post('/input-aspirasi', [InputAspirasiController::class, 'store']);
+
+// untuk melihat histori siswa
+Route::get('/input-aspirasi/histori', [InputAspirasiController::class, 'histori']);
+
 
 
 // buat dahsboard untuk admin (protected)
@@ -60,6 +66,8 @@ Route::middleware('adminonly')->group(function () {
     // kasih seeders untuk data dummy
     // menampilkan data-data siswa
     Route::get('/siswa', [SiswaController::class, 'index']);
+
+    
 
 
 

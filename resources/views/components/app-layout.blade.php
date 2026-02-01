@@ -13,6 +13,8 @@
     <nav>
         <div class="nav-links">
             <a href="/">Home</a>
+
+            <a href="/input-aspirasi/histori">Histori Input Histori</a>
         </div>
         
         <div class="nav-right">

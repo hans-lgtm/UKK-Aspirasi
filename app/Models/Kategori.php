@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Kategori extends Model
 {
     // biar bisa pakai creat method  dari ORM
-    public $fillable = [
+    protected $fillable = [
         'ket_kategori'
     ];
 
-    public $table = 'kategori';
+    protected $table = 'kategori';
 }

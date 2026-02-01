@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Siswa extends Model
 {
-    public $fillable = [
+    protected $fillable = [
         'nis',
         'kelas',
         'nama'
     ];
 
-    public $table = 'siswa';
+    protected $table = 'siswa';
 }
