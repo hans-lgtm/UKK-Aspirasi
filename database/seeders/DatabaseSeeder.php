@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Admin;
+use App\Models\InputAspirasi;
 use App\Models\Kategori;
 use App\Models\Siswa;
 use App\Models\User;
@@ -44,5 +45,47 @@ class DatabaseSeeder extends Seeder
         'nama' => 'Wowo'
     ]);
 
+    InputAspirasi::create([
+        'siswa_id' => rand(1, 2),
+        'kategori_id' => rand(1, 2),
+        'lokasi' => 'A5',
+        'keterangan' => 'Meja rusak',
+        'created_at' => '2025-10-01 08:00:00'
+    ]);
+
+    InputAspirasi::create([
+        'siswa_id' => rand(1, 2),
+        'kategori_id' => rand(1, 2),
+        'lokasi' => 'A1',
+        'keterangan' => 'Meja rusak parah',
+        'created_at' => '2025-11-21 08:00:00'
+    ]);
+
+    InputAspirasi::create([
+        'siswa_id' => rand(1, 2),
+        'kategori_id' => rand(1, 2),
+        'lokasi' => 'A3',
+        'keterangan' => 'Meja rusak Ringan',
+        'created_at' => '2025-12-11 08:00:00'
+    ]);
+
+    InputAspirasi::create([
+        'siswa_id' => rand(1, 2),
+        'kategori_id' => rand(1, 2),
+        'lokasi' => 'A4',
+        'keterangan' => 'Meja Hilang',
+        'created_at' => '2025-12-20 08:00:00'
+    ]);
+
+    InputAspirasi::create([
+        'siswa_id' => rand(1, 2),
+        'kategori_id' => rand(1, 2),
+        'lokasi' => 'A10',
+        'keterangan' => 'Meja Digasak',
+        'created_at' => '2025-12-10 08:00:00'
+    ]);
+
     }
+
+    
 }

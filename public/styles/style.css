@@ -1945,3 +1945,10 @@ nav a:first-child {
     outline-offset: 2px;
 }
 
+/* style untuk form yang ada di class div pencarian-histori-aspirasi */
+.pencarian-histori-aspirasi form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
